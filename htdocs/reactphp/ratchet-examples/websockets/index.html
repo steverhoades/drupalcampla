@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+var conn = new WebSocket('ws://192.168.56.103:8080');
+conn.onopen = function(e) {
+    console.log('Now listening for slide changes.');
+}
+
+conn.onmessage = function(e) {
+    var iframe = $("#slides")[0].contentWindow;
+    iframe.location.reload(true);
+    setTimeout(1000, function() {
+        iframe.document.body.focus();
+    });
+    
+}
+</script>
+</head>
+<body margin=0 padding=0>  
+<iframe id='slides' src='/slides.html' style='position: absolute; top:0; left:0;width: 100%;height:100%;border: 0; margin:0;padding: 0'></iframe>
+</body>
+</html> 

@@ -1,0 +1,26 @@
+{
+    "name" : "mkjpryor/async",
+    "type" : "library",
+    "description" : "Asyncronous tasks using generators",
+    "homepage" : "https://bitbucket.org/mkjpryor/async/wiki/Home",
+    "authors" : [
+        {
+            "name" : "Matt Pryor",
+            "email" : "matt@pryor.org.uk",
+            "role" : "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.0",
+        "react/react" : "0.4.*",
+        "react/promise" : "2.*"
+    },
+    "require-dev" : {
+        "phpunit/phpunit" : "*"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Async" : "src"
+        }
+    }
+}

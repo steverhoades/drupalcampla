@@ -1,0 +1,30 @@
+{
+    "require": {
+        "php": ">=5.5.0",
+        "react/react": "dev-master as 0.4.2",
+        "react/partial": "~2.0",
+        "cboden/ratchet": "dev-master",
+        "atrox/async-mysql": "dev-master",
+        "mkraemer/react-inotify": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kaja47/async-mysql"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/steverhoades/react-inotify"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "ExChat\\": "src/",
+            "ExHttp\\": "src/",
+            "ExFile\\": "src/",
+            "ExGame\\": "src/",
+            "SlideBuilder\\": "src/",
+            "Async\\": "vendor_static/mkjpryor/async/src/"
+        }
+    }
+}
