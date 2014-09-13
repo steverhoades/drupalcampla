@@ -148,7 +148,6 @@ php:
             - inotify
             - event
             - ev
-            - pthreads
             - 'channel://pecl.php.net/zmq-1.1.2'
     ini:
         display_errors: On
@@ -160,7 +159,6 @@ php:
             - 'inotify.so'
             - 'event.so'
             - 'ev.so'
-            - 'pthreads.so'
     timezone: America/Chicago
     mod_php: 0
 hhvm:
